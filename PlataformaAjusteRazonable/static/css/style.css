@@ -1,0 +1,28 @@
+.img-inicio {
+    margin-left: -46%
+}
+
+.hero {
+    background-size: cover;
+}
+
+
+.card {
+    position: relative;
+    min-height: 100vh;
+    background-image: url('/static/img/login/home.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-img-overlay {
+    position: relative;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+}
