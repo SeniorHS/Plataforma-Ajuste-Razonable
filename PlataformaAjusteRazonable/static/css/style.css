@@ -21,6 +21,24 @@
     padding: 20px;
 }
 
+@keyframes item-anim {
+  from {transform: scale(.5);}
+  to {transform: scale(1);}
+}
+
+.item-intranet .item-text:hover{
+    animation-name: item-anim;
+    animation-duration: .3s;
+}
+
+.item-intranet:hover{
+    transform: scale(1.2);
+}
+
+.item-intranet{
+    transition: .3s;
+}
+
 @media (max-width: 768px) {
     .container {
         width: 100%;

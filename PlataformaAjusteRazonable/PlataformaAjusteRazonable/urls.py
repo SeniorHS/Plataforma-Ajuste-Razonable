@@ -17,14 +17,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from Login import views as log
-from Registro import views as reg
-from Informativo import views as inf
+from Login import views as login
+from Registro import views as registro
+from Informativo import views as informativo
+from Intranet import views as intranet
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', log.login, name='login'),
-    path('registro/', reg.registro, name='registro'),
-    path('noticias/', inf.noticias, name='noticias')
-
+    path('', login.login, name='login'),
+    path('intranet/', intranet.intranet, name="intranet"),
+    path('registro/', registro.registro, name='registro'),
+    path('informativo/', informativo.informativo, name='informativo')
 ]

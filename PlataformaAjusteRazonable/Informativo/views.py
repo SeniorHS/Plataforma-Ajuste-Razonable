@@ -2,5 +2,5 @@ from django.shortcuts import render
 
 # Create your views here.
 
-def noticias(request):
-    return render(request, 'noticias/noticias.html')
+def informativo(request):
+    return render(request, 'informativo/informativo.html')
