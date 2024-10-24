@@ -20,11 +20,13 @@ from django.urls import path
 from Login import views as log
 from Registro import views as reg
 from Informativo import views as inf
+from Ajustes import views as aju
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', log.login, name='login'),
     path('registro/', reg.registro, name='registro'),
-    path('noticias/', inf.noticias, name='noticias')
+    path('noticias/', inf.noticias, name='noticias'),
+    path('ajuste/', aju.ajuste, name='ajuste')
 
 ]
