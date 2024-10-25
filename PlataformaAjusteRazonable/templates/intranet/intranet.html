@@ -1,0 +1,103 @@
+{% extends "master/index.html" %}
+
+
+{% load static %}
+{% block titulo %}
+Noticias Ajustes Razonables
+{% endblock titulo %}
+
+
+{% block contenido %}
+<div id="imagenesCarousel" class="carousel slide rounded" style="max-width: 2000px;">
+    <div class="carousel-inner rounded">
+        <div class="carousel-item active bg-primary">
+            <img src="{% static 'img/intranet/carousel/imagen1.jpg' %}" class="" alt="Imagen Noticia 1" style="height: 350px; width: 100%; object-fit: cover;">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+            <h5 class="text-white fs-1 p-2">Titulo Apartado Informativo 1</h5>
+            <p class="text-white fs-3 p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget purus
+                in lectus imperdiet hendrerit et scelerisque eros. Curabitur ut efficitur massa. Nam a turpis
+                ullamcorper, molestie metus nec, elementum tellus. Suspendisse maximus urna sed enim ultricies, at
+                ultricies leo vehicula. Proin quam sapien, aliquet eget aliquam venenatis, commodo vel lectus. Duis
+                sagittis felis velit, nec posuere orci ultricies a. Proin at eros ut tellus tristique vehicula.</p>
+        </div>
+        <div class="carousel-item bg-primary">
+            <img src="{% static 'img/intranet/carousel/imagen2.jpg' %}" class="d-block w-100" alt="Imagen Noticia 2" style="height: 350px; object-fit: cover;">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+            <h5 class="text-white fs-1 p-2">Titulo Apartado Informativo 2</h5>
+            <p class="text-white fs-3 p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget purus
+                in lectus imperdiet hendrerit et scelerisque eros. Curabitur ut efficitur massa. Nam a turpis
+                ullamcorper, molestie metus nec, elementum tellus. Suspendisse maximus urna sed enim ultricies, at
+                ultricies leo vehicula. Proin quam sapien, aliquet eget aliquam venenatis, commodo vel lectus. Duis
+                sagittis felis velit, nec posuere orci ultricies a. Proin at eros ut tellus tristique vehicula.</p>
+        </div>
+        <div class="carousel-item bg-primary">
+            <img src="{% static 'img/intranet/carousel/imagen3.jpg' %}" class="d-block w-100" alt="Imagen Noticia 3" style="height: 650px; object-fit: cover;">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+            <h5 class="text-white fs-1 p-2">Titulo Apartado Informativo 3</h5>
+            <p class="text-white fs-3 p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget purus
+                in lectus imperdiet hendrerit et scelerisque eros. Curabitur ut efficitur massa. Nam a turpis
+                ullamcorper, molestie metus nec, elementum tellus. Suspendisse maximus urna sed enim ultricies, at
+                ultricies leo vehicula. Proin quam sapien, aliquet eget aliquam venenatis, commodo vel lectus. Duis
+                sagittis felis velit, nec posuere orci ultricies a. Proin at eros ut tellus tristique vehicula.</p>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#imagenesCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#imagenesCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<div class="container" style="max-width: 1400px;">
+
+
+    <div class="container p-5">
+        <div class="row align-items-start text-center">
+            <div class="col">
+                <a href="{% url 'ajuste' %}" class="link-underline link-underline-opacity-0">
+                    <img src="{% static 'img/intranet/iconos/ajuste.jpg' %}"
+                        style="height: 250px; width: 250px;" class="border border-5 p-5 rounded-circle" alt="">
+                    <h2 class="m-3">Ajustes Razonables</h2>
+                </a>
+            </div>
+            <div class="col">
+                <a href="" class="link-underline link-underline-opacity-0">
+                    <img src="{% static 'img/intranet/iconos/informativo.svg' %}" class="border border-5 p-5 rounded-circle"
+                        alt="">
+                    <h2 class="m-3">Apartado Informativo</h2>
+                </a>
+            </div>
+            <div class="col">
+                <a href="" class="link-underline link-underline-opacity-0">
+                    <img src="{% static 'img/intranet/iconos/manualusuario.svg' %}" class="border border-5 p-5 rounded-circle"
+                        alt="">
+                    <h2 class="m-3">Manual de Usuario o Guia</h2>
+                </a>
+            </div>
+            <div class="col">
+                <a href="" class="link-underline link-underline-opacity-0">
+                    <img src="{% static 'img/intranet/iconos/gestionprofesores.svg' %}" class="border border-5 p-5 rounded-circle" alt="">
+                    <h2 class="m-3">Gestión de Docentes</h2>
+                </a>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+</div>
+    
+{% endblock contenido %}
+    
+
+
+    

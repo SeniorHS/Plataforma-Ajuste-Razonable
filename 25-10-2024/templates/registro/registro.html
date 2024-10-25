@@ -1,0 +1,53 @@
+{% extends "master/index.html" %}
+
+
+{% block titulo %}
+Registro Ajuste Razonables
+    
+{% endblock titulo %}
+    
+
+
+{% block contenido %}
+<div class="card">
+    <div class="card-img-overlay">
+        <div class="container mx-auto col-md-7 mt-5 border bg-white border-black rounded">
+            <h1 class="text-center mt-5">Formulario de Registro</h1>
+            <div class="row m-4">
+                <div class="col">
+                    <label class="fw-bold">RUT</label>
+                    <input type="text" class="form-control" placeholder="Ej: 12345678-9">
+                </div>
+                <div class="col">
+                    <label class="fw-bold">Nombre</label>
+                    <input type="text" class="form-control" placeholder="Nombre">
+                </div>
+                <div class="col">
+                    <label class="fw-bold">Apellido</label>
+                    <input type="text" class="form-control" placeholder="Apellido">
+                </div>
+            </div>
+            <div class="row m-4">
+                <div class="col">
+                    <label class="fw-bold">Correo</label>
+                    <input type="email" class="form-control" placeholder="Ej: nombre@inacapmail.cl">
+                </div>
+                <div class="col">
+                    <label class="fw-bold">Contraseña</label>
+                    <input type="password" class="form-control" placeholder="Contraseña">
+                </div>
+                <div class="col">
+                    <label class="fw-bold">Confirmar Contraseña</label>
+                    <input type="password" class="form-control" placeholder="">
+                </div>
+            </div>
+            <div class="row m-5">
+                <a href="{% url 'login' %}" class="col btn btn-danger btn-lg m-2">Volver</a>
+                <a href="" class="col btn btn-success btn-lg m-2">Registrarse</a>
+            </div>
+        </div>
+    </div>
+</div>
+    
+{% endblock contenido %}
+    

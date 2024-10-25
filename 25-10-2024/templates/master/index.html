@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+    {% block titulo %}
+    {% endblock titulo %}
+        </title>
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="/static/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!-- Nav tabs -->
+    <ul
+        class="nav nav-tabs"
+        id="navId"
+        role="tablist"
+    >
+        <li class="nav-item">
+            <a
+                href="#tab1Id"
+                class="nav-link active"
+                data-bs-toggle="tab"
+                aria-current="page"
+                >Active</a
+            >
+        </li>
+        <li class="nav-item dropdown">
+            <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Navbar placeholder</a
+            >
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#tab2Id">Pancho</a>
+                <a class="dropdown-item" href="#tab3Id">Roerto</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#tab4Id">Omar</a>
+            </div>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a href="#tab5Id" class="nav-link" data-bs-toggle="tab"
+                >Another link</a
+            >
+        </li>
+        <li class="nav-item" role="presentation">
+            <a href="#" class="nav-link disabled" data-bs-toggle="tab"
+                >Disabled</a
+            >
+        </li>
+    </ul>
+    
+    <!-- Tab panes -->
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="tab1Id" role="tabpanel">
+            
+        </div>
+        <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
+    </div>
+    
+    <!-- (Optional) - Place this js code after initializing bootstrap.min.js or bootstrap.bundle.min.js -->
+    <script>
+        var triggerEl = document.querySelector("#navId a");
+        bootstrap.Tab.getInstance(triggerEl).show(); // Select tab by name
+    </script>
+    
+    
+    <div id="imagenesCarousel" class="carousel slide rounded" style="max-width: 100%;">
+        <div class="carousel-inner rounded">
+            <div class="carousel-item active bg-primary">
+                <img src="{% static 'img/informativo/carousel/imagen1.jpg' %}" class="d-block w-100" alt="Imagen Noticia 1" style="height: 25rem; object-fit: cover;">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+                <h5 class="text-white fs-1 p-2">Convenio de INACAP con Nike</h5>
+                <p class="text-white fs-3 p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget purus
+                    in lectus imperdiet hendrerit et scelerisque eros. Curabitur ut efficitur massa. Nam a turpis
+                    ullamcorper, molestie metus nec, elementum tellus. Suspendisse maximus urna sed enim ultricies, at
+                    ultricies leo vehicula. Proin quam sapien, aliquet eget aliquam venenatis, commodo vel lectus. Duis
+                    sagittis felis velit, nec posuere orci ultricies a. Proin at eros ut tellus tristique vehicula.</p>
+            </div>
+            <div class="carousel-item bg-primary">
+                <img src="{% static 'img/informativo/carousel/imagen2.jpg' %}" class="d-block w-100" alt="Imagen Noticia 2" style="height: 25rem; object-fit: cover;">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+                <h5 class="text-white fs-1 p-2">Titulo Apartado Informativo 2</h5>
+                <p class="text-white fs-3 p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget purus
+                    in lectus imperdiet hendrerit et scelerisque eros. Curabitur ut efficitur massa. Nam a turpis
+                    ullamcorper, molestie metus nec, elementum tellus. Suspendisse maximus urna sed enim ultricies, at
+                    ultricies leo vehicula. Proin quam sapien, aliquet eget aliquam venenatis, commodo vel lectus. Duis
+                    sagittis felis velit, nec posuere orci ultricies a. Proin at eros ut tellus tristique vehicula.</p>
+            </div>
+            <div class="carousel-item bg-primary">
+                <img src="{% static 'img/informativo/carousel/imagen3.jpg' %}" class="d-block w-100" alt="Imagen Noticia 3" style="height: 25rem; object-fit: cover;">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+                <h5 class="text-white fs-1 p-2">Titulo Apartado Informativo 3</h5>
+                <p class="text-white fs-3 p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget purus
+                    in lectus imperdiet hendrerit et scelerisque eros. Curabitur ut efficitur massa. Nam a turpis
+                    ullamcorper, molestie metus nec, elementum tellus. Suspendisse maximus urna sed enim ultricies, at
+                    ultricies leo vehicula. Proin quam sapien, aliquet eget aliquam venenatis, commodo vel lectus. Duis
+                    sagittis felis velit, nec posuere orci ultricies a. Proin at eros ut tellus tristique vehicula.</p>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#imagenesCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#imagenesCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container" style="max-width: 1400px;">
+        <div class="container p-5">
+            <div class="row align-items-start text-center">
+                <div class="col item-intranet">
+                    <a href="" class="link-underline link-underline-opacity-0">
+                        <img src="{% static 'img/informativo/iconos/ajuste.jpg' %}"
+                            style="height: 250px; width: 250px;" class="border border-5 p-5 rounded-circle" alt="" >
+                        <h2 class="m-3 item-text">Ajustes Razonables</h2>
+                    </a>
+                </div>
+                <div class="col item-intranet">
+                    <a href="" class="link-underline link-underline-opacity-0">
+                        <img src="{% static 'img/informativo/iconos/informativo.svg' %}" class="border border-5 p-5 rounded-circle"
+                            alt="">
+                        <h2 class="m-3 item-text">Apartado Informativo</h2>
+                    </a>
+                </div>
+                <div class="col item-intranet">
+                    <a href="" class="link-underline link-underline-opacity-0">
+                        <img src="{% static 'img/informativo/iconos/manualusuario.svg' %}" class="border border-5 p-5 rounded-circle"
+                            alt="">
+                        <h2 class="m-3 item-text">Manual de Usuario o Guia</h2>
+                    </a>
+                </div>
+                <div class="col item-intranet">
+                    <a href="" class="link-underline link-underline-opacity-0">
+                        <img src="{% static 'img/informativo/iconos/gestionprofesores.svg' %}" class="border border-5 p-5 rounded-circle" alt="">
+                        <h2 class="m-3 item-text">Gestión de Docentes</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

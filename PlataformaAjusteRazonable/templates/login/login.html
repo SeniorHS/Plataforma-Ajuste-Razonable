@@ -1,44 +1,45 @@
+{% extends "master/index.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/static/css/bootstrap.css">
-    <link rel="stylesheet" href="/static/css/style.css">
-    <script src="/static/js/bootstrap.bundle.min.js"></script>
-</head>
-<body>
-    <div class="container">
-        <div class="col col-md-7">
-            <img src="{% static 'img/login/home.png' %}" class="img-fluid float-start img-inicio" alt="">
-        </div>
-            
-    
-        <div class="row">
-            <h1 class="my-5 text-center">Plataforma de Gestión Ajustes Razonables</h1>
-            <div class="ms-auto">
-                <div class="mb-3">
-                    <label for="basic-url" class="form-label fs-3">Ingrese su RUT o Correo</label>
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Ej: nombre@inacapmail.cl o 12345678-9">
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="basic-url" class="form-label fs-3">Contraseña</label>
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Contraseña">
-                    </div>
-                </div>
-                <p class="fw-bold">No tienes una cuenta? <a href="{% url 'registro' %}">Registrate</a></p>
-                <a class="btn btn-danger btn-lg fw-bold" href="{% url 'intranet' %}">Ingresar</a>
-    
-            </div>
-    
-        </div>
-    
-    </div>
-</body>
-</html>
 
+
+{% block titulo %}
+Login Ajustes Razonables
+{% endblock titulo %}
+    
+
+
+{% block contenido %}
+
+
+<div class="container">
+    <div class="col col-md-7">
+        <img src="{% static 'img/login/home.png' %}" class="img-fluid float-start img-inicio" alt="">
+    </div>
+        
+
+    <div class="row">
+        <h1 class="my-5 text-center">Plataforma de Gestión Ajustes Razonables</h1>
+        <div class="ms-auto">
+            <div class="mb-3">
+                <label for="basic-url" class="form-label fs-3">Ingrese su RUT o Correo</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Ej: nombre@inacapmail.cl o 12345678-9">
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="basic-url" class="form-label fs-3">Contraseña</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Contraseña">
+                </div>
+            </div>
+            <p class="fw-bold">No tienes una cuenta? <a href="{% url 'registro' %}">Registrate</a></p>
+            <a class="btn btn-danger btn-lg fw-bold" href="{% url 'noticias' %}">Ingresar</a>
+
+        </div>
+
+    </div>
+
+</div>
+    
+{% endblock contenido %}
+    
