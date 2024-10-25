@@ -1,0 +1,30 @@
+/* Estilos para el offcanvas */
+.offcanvas-start {
+    width: 250px;
+    /* Ancho del sidebar */
+}
+
+/* Animación para desplazar el contenido */
+.contenido {
+    transition: margin-left 0.4s ease;
+}
+
+/* Cuando se abre el offcanvas, empuja el contenido */
+.contenido.shifted {
+    margin-left: 200px;
+    /* Mismo ancho del sidebar */
+}
+
+/* En pantallas pequeñas, no desplaza el contenido */
+@media (width > 1024px) {
+    .contenido.shifted {
+        margin-left: 400px;
+        /* No empuja el contenido en pantallas pequeñas */
+    }
+}
+
+@media (width <=1024px) {
+    .contenido.shifted {
+        margin-left: 400px;
+    }
+}

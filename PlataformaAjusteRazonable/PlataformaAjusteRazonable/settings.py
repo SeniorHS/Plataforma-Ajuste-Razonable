@@ -44,8 +44,7 @@ INSTALLED_APPS = [
     'Configuraciones',
     'Informativo',
     'Intranet',
-    'Login',
-    'Registro',
+    'Usuario',
 ]
 
 MIDDLEWARE = [
