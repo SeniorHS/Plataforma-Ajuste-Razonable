@@ -11,32 +11,33 @@ Login Ajustes Razonables
 {% block contenido %}
 
 
-<div class="container">
-    <div class="col col-md-7">
-        <img src="{% static 'img/login/home.png' %}" class="img-fluid float-start img-inicio" alt="">
-    </div>
-        
-
+<div class="container container-login">
     <div class="row">
-        <h1 class="my-5 text-center">Plataforma de Gestión Ajustes Razonables</h1>
-        <div class="ms-auto">
-            <div class="mb-3">
-                <label for="basic-url" class="form-label fs-3">Ingrese su RUT o Correo</label>
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Ej: nombre@inacapmail.cl o 12345678-9">
-                </div>
-            </div>
-            <div class="mb-3">
-                <label for="basic-url" class="form-label fs-3">Contraseña</label>
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Contraseña">
-                </div>
-            </div>
-            <p class="fw-bold">No tienes una cuenta? <a href="{% url 'registro' %}">Registrate</a></p>
-            <a class="btn btn-danger btn-lg fw-bold" href="{% url 'noticias' %}">Ingresar</a>
-
+        <div class="col">
+            <img src="{% static 'img/login/home.png' %}" class="img-login" alt="">
         </div>
-
+        <div class="col">
+            <h1 class="my-5 text-center">Plataforma de Gestión Ajustes Razonables</h1>
+            <div class="ms-auto">
+                <div class="mb-3">
+                    <label for="basic-url" class="form-label fs-3">Ingrese su RUT o Correo</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Ej: nombre@inacapmail.cl o 12345678-9">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="basic-url" class="form-label fs-3">Contraseña</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Contraseña">
+                    </div>
+                </div>
+                <p class="fw-bold">No tienes una cuenta? <a href="{% url 'registro' %}">Registrate</a></p>
+                <a class="btn btn-danger btn-lg fw-bold" href="{% url 'noticias' %}">Ingresar</a>
+    
+            </div>
+    </div>
+    
+        
     </div>
 
 </div>

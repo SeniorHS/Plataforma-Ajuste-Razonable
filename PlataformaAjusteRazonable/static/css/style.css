@@ -1,12 +1,3 @@
-.img-inicio {
-    margin-left: -46%
-}
-
-.hero {
-    background-size: cover;
-}
-
-
 .card {
     position: relative;
     min-height: 100vh;
@@ -16,6 +7,9 @@
     background-repeat: no-repeat;
 }
 
+.img-login{
+    max-width: 100%;
+}
 .card-img-overlay {
     position: relative;
     padding: 20px;
