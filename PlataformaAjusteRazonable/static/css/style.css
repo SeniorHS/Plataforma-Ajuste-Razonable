@@ -26,3 +26,19 @@
         width: 100%;
     }
 }
+
+/* Estilo de intranet */
+
+
+.LineaHorizontal {
+    border: none;                 /* Quita bordes predeterminados */
+    border-top: 1px solid red;    /* Crea la línea roja */
+    width: 80%;                   /* Ajusta el ancho de la línea */
+    margin: 0 auto;               /* Centra la línea */
+    margin-top: -4%;             /* Ajusta el espacio superior */
+  }
+
+.MarginBotones {
+    margin-top: -1%;
+}
+    
