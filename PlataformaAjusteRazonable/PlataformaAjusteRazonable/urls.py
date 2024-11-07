@@ -23,7 +23,7 @@ from Ajustes import views as aju
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', user.login, name='login'),
-    path('registro/', user.login, name='registro'),
+    path('registro/', user.registro, name='registro'),
     path('intranet/', intra.intranet, name='noticias'),
     path('ajuste/', aju.ajuste, name='ajuste')
 

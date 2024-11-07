@@ -6,6 +6,15 @@
     background-size: cover;
 }
 
+.container-registro{
+    padding: 0px;
+}
+
+@media (max-width: 425px) {
+    .container-registro {
+      max-width: 100%;
+    }
+}
 
 .card {
     position: relative;
