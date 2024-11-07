@@ -9,19 +9,15 @@ Noticias Ajustes Razonables
 
 {% block contenido %}
 <div id="imagenesCarousel" class="carousel slide rounded" style="max-width: 2000px;">
+    <center>
     <div class="carousel-inner rounded">
-        <div class="carousel-item active bg-primary">
-            <img src="{% static 'img/intranet/carousel/imagen1.jpg' %}" class="" alt="Imagen Noticia 1" style="height: 350px; width: 100%; object-fit: cover;">
+        <div class="carousel-item active bg-dark">
+            <img src="{% static 'img/intranet/carousel/imagen1.jpg' %}" class="" alt="Imagen Noticia 1" style="height: 400px; width: 50%; object-fit: cover;">
             <div class="carousel-caption d-none d-md-block ">
             </div>
-            <h5 class="text-white fs-1 p-2">Titulo Apartado Informativo 1</h5>
-            <p class="text-white fs-3 p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget purus
-                in lectus imperdiet hendrerit et scelerisque eros. Curabitur ut efficitur massa. Nam a turpis
-                ullamcorper, molestie metus nec, elementum tellus. Suspendisse maximus urna sed enim ultricies, at
-                ultricies leo vehicula. Proin quam sapien, aliquet eget aliquam venenatis, commodo vel lectus. Duis
-                sagittis felis velit, nec posuere orci ultricies a. Proin at eros ut tellus tristique vehicula.</p>
+
         </div>
-        <div class="carousel-item bg-primary ">
+        <div class="carousel-item bg-dark ">
             <img src="{% static 'img/intranet/carousel/imagen2.jpg' %}" class="d-block w-100" alt="Imagen Noticia 2" style="height: 350px; object-fit: cover;">
             <div class="carousel-caption d-none d-md-block">
             </div>
@@ -44,6 +40,7 @@ Noticias Ajustes Razonables
                 sagittis felis velit, nec posuere orci ultricies a. Proin at eros ut tellus tristique vehicula.</p>
         </div>
     </div>
+    </center>
     <button class="carousel-control-prev" type="button" data-bs-target="#imagenesCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
@@ -54,52 +51,128 @@ Noticias Ajustes Razonables
     </button>
 </div>
 
-<div class="container" style="max-width: 1400px;">
-
-
+<div class="container " style="max-width: 1400px;">
     <div class="container p-5">
+        <center><h2 style="color: red;">Accesos</h2></center>
         <div class="row align-items-start text-center m-5 ">
             <hr class="LineaHorizontal">
-            <div class="row m-2 ">
-                <div class="col MarginBotones">
-                    <a href="{% url 'ajuste' %}" class="link-underline link-underline-opacity-0">
-                        <img src="{% static 'img/intranet/iconos/ajuste.jpg' %}"
-                            style="height: 120px; width: 120px;" class="border border-5 p-3 rounded-circle" alt="">
-                        <h2 class="m-3">Ajustes Razonables</h2>
-                    </a>
-                </div>
-                <div class="col MarginBotones">
-                    <a href="" class="link-underline link-underline-opacity-0">
-                        <img src="{% static 'img/intranet/iconos/informativo.svg' %}" class="border border-5 p-3 rounded-circle"
-                            style="height: 120px; width: 120px;"alt="">
-                        <h2 class="m-3">Apartado Informativo</h2>
-                    </a>
-                </div>
-                <div class="col MarginBotones">
-                    <a href="" class="link-underline link-underline-opacity-0">
-                        <img src="{% static 'img/intranet/iconos/manualusuario.svg' %}" class="border border-5 p-3 rounded-circle"
-                        style="height: 120px; width: 120px;" alt="">
-                        <h2 class="m-3">Manual de Usuario o Guia</h2>
-                    </a>
-                </div>
-                <div class="col MarginBotones">
-                    <a href="" class="link-underline link-underline-opacity-0">
-                        <img src="{% static 'img/intranet/iconos/gestionprofesores.svg' %}" class="border border-5 p-3 rounded-circle" 
-                        style="height: 120px; width: 120px;" alt="">
-                        <h2 class="m-3">Gestión de Docentes</h2>
-                    </a>
-                </div>
+            <div class="row m-2 mt-1">
+            <div class="col MarginBotones ">
+                <a href="{% url 'ajuste' %}" class="link-underline link-underline-opacity-0">
+                    <img src="{% static 'img/intranet/iconos/ajuste.jpg' %}"
+                        style="height: 120px; width: 120px;" class="border border-5 p-3 rounded-circle" alt="">
+                    <h2 class="m-3">Ajustes Razonables</h2>
+                </a>
+            </div>
+            <div class="col MarginBotones">
+                <a href="" class="link-underline link-underline-opacity-0">
+                    <img src="{% static 'img/intranet/iconos/informativo.svg' %}" class="border border-5 p-3 rounded-circle"
+                        style="height: 120px; width: 120px;"alt="">
+                    <h2 class="m-3">Apartado Informativo</h2>
+                </a>
+            </div>
+            <div class="col MarginBotones">
+                <a href="" class="link-underline link-underline-opacity-0">
+                    <img src="{% static 'img/intranet/iconos/manualusuario.svg' %}" class="border border-5 p-3 rounded-circle"
+                    style="height: 120px; width: 120px;" alt="">
+                    <h2 class="m-3">Manual de Usuario o Guia</h2>
+                </a>
+            </div>
+            <div class="col MarginBotones">
+                <a href="" class="link-underline link-underline-opacity-0">
+                    <img src="{% static 'img/intranet/iconos/gestionprofesores.svg' %}" class="border border-5 p-3 rounded-circle" 
+                    style="height: 120px; width: 120px;" alt="">
+                    <h2 class="m-3">Gestión de Docentes</h2>
+                </a>
             </div>
         </div>
-        <!-- <footer class="FooterIntranet">
-            <h1>ola mundo</h1>
-            <h1>ola mundo</h1>
-            <h1>ola mundo</h1>
-            <h1>ola mundo</h1>
-            <h1>ola mundo</h1>
-        </footer> -->
+
+        </div>
+        <hr class="LineaHorizontal2 mt-5">
     </div>
 </div>  
+<section class="">
+    <div class="container mt-5">
+        <h1><p><u>Noticias</u></p></h1>
+         <div class="card card-body bg-dark">
+            <div class="row p-2">
+                <!-- noticia importante (primera noticia [encabezado])-->
+                <div class=" card card-body col" style="width: 30%;">
+                    <img src="{% static 'img/intranet/carousel/imagen1.jpg' %}" class="" alt="Imagen Noticia 1" style="height: 100%; width: 100%;; object-fit: cover;margin: 0%;">
+                    <div class="d-none d-md-block ">
+                    </div>
+                    <!-- contenido de la noticia -->
+                    <h1 class="">Titulo Apartado Informativo 1</h1>
+                    <div class="container" style="display: flex; justify-content: flex-start;">
+                        <div class="linea-vertical"></div>
+                        <p class="FuenteTamañoNoticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget purus
+                            in lectus imperdiet hendrerit et scelerisque eros. Curabitur ut efficitur massa. Nam a turpis
+                            ullamcorper, molestie metus nec, elementum tellus. Suspendisse maximus urna sed enim ultricies, at
+                            ultricies leo vehicula. Proin quam sapien, aliquet eget aliquam venenatis, commodo vel lectus. Duis
+                            sagittis felis velit, nec posuere orci ultricies a. Proin at eros ut tellus tristique vehicula.</p>
+                    </div>
+                </div>
+                <div class="container col">
+                    <div class="card card-body">
+                        <img src="{% static 'img/intranet/carousel/imagen2.jpg' %}" class="d-block w-100" alt="Imagen Noticia 2" style="height: 100%; width: 100%; object-fit: cover;">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                        <!-- contenido de la noticia -->
+                        <h3 class="">Titulo Apartado Informativo 2</h3>
+                        <div class="container" style="display: flex; justify-content: flex-start;">
+                            <div class="linea-vertical"></div>
+                            <p class="FuenteTamañoNoticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget purus
+                                in lectus imperdiet hendrerit et scelerisque eros. Curabitur ut efficitur massa. Nam a turpis
+                                ullamcorper, molestie metus nec, elementum tellus. Suspendisse maximus urna sed enim ultricies, at
+                                ultricies leo vehicula. Proin quam sapien, aliquet eget aliquam venenatis, commodo vel lectus. Duis
+                                sagittis felis velit, nec posuere orci ultricies a. Proin at eros ut tellus tristique vehicula.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="row p-2" >
+                <div class="card card-body col " style="width: 50% ;">
+                    <img src="{% static 'img/intranet/carousel/imagen3.jpg' %}" class="d-block w-100" alt="Imagen Noticia 3" style="height: 100%; width: 100%; object-fit: cover;">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                    <!-- contenido de la noticia -->
+                    <h3 class="">Titulo Apartado Informativo 3</h3>
+                    <div class="container" style="display: flex; justify-content: flex-start;" >
+                        <div class="linea-vertical"></div>
+                        <p class="FuenteTamañoNoticia">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget purus
+                            in lectus imperdiet hendrerit et scelerisque eros. Curabitur ut efficitur massa. Nam a turpis
+                            ullamcorper, molestie metus nec, elementum tellus. Suspendisse maximus urna sed enim ultricies, at
+                            ultricies leo vehicula. Proin quam sapien, aliquet eget aliquam venenatis, commodo vel lectus. Duis
+                            sagittis felis velit, nec posuere orci ultricies a. Proin at eros ut tellus tristique vehicula.</p>
+                    </div>
+                </div>
+                <div class="card card-body col p-2" style="width: 50%;">
+                    <img src="{% static 'img/intranet/carousel/imagen3.jpg' %}" class="d-block w-100" alt="Imagen Noticia 3" style="height: 100%; width: 100%; object-fit: cover;">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                    <!-- contenido de la noticia -->
+                    <h3 class="">Titulo Apartado Informativo 3</h3>
+                    <div class="container" style="display: flex; justify-content: flex-start;">
+                        <div class="linea-vertical" ></div>
+                        <div class="FuenteTamañoNoticia">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget purus
+                                in lectus imperdiet hendrerit et scelerisque eros. Curabitur ut efficitur massa. Nam a turpis
+                                ullamcorper, molestie metus nec, elementum tellus. Suspendisse maximus urna sed enim ultricies, at
+                                ultricies leo vehicula. Proin quam sapien, aliquet eget aliquam venenatis, commodo vel lectus. Duis
+                                sagittis felis velit, nec posuere orci ultricies a. Proin at eros ut tellus tristique vehicula.
+                            </p>
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>  
+    </div>
+</section>
 {% endblock contenido %}
     
 
