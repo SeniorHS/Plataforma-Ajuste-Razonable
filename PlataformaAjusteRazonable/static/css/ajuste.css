@@ -16,15 +16,19 @@
 }
 
 /* En pantallas pequeñas, no desplaza el contenido */
-@media (width > 1024px) {
+@media (width >= 1000px) {
     .contenido.shifted {
         margin-left: 400px;
         /* No empuja el contenido en pantallas pequeñas */
     }
 }
 
-@media (width <=1024px) {
+@media (width <= 800px) {
     .contenido.shifted {
-        margin-left: 400px;
+        margin-left: 0px;
     }
+}
+
+.link-hover-white:hover{
+    color: white !important;
 }

@@ -16,7 +16,7 @@
     }
 }
 
-.card {
+.card-registro {
     position: relative;
     min-height: 100vh;
     background-image: url('/static/img/login/home.png');
@@ -41,8 +41,15 @@
 
 .LineaHorizontal {
     border: none;                 /* Quita bordes predeterminados */
-    border-top: 1px solid red;    /* Crea la línea roja */
+    border-top: 2px solid red;    /* Crea la línea roja */
     width: 80%;                   /* Ajusta el ancho de la línea */
+    margin: 0 auto;               /* Centra la línea */
+    margin-top: -4%;             /* Ajusta el espacio superior */
+  }
+.LineaHorizontal2 {
+    border: none;                 /* Quita bordes predeterminados */
+    border-top: 2px solid red;    /* Crea la línea roja */
+    width: 60%;                   /* Ajusta el ancho de la línea */
     margin: 0 auto;               /* Centra la línea */
     margin-top: -4%;             /* Ajusta el espacio superior */
   }
@@ -50,4 +57,26 @@
 .MarginBotones {
     margin-top: -1%;
 }
-    
+
+/* INICIO DE LA PAGINA */
+.FuenteTamañoNoticia{
+    font-size: 18px;
+
+}
+.card-noticias {
+    position: relative;
+    min-height: 100vh;
+    background-size: cover;
+    background-color: gray;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.linea-vertical {
+    width: 30px;
+    height: 100px;
+    background-color: red;
+    margin-right: 20px;
+}
+.FondoNoticias{
+    background-color: rgba(177, 177, 177, 0.836);
+}
